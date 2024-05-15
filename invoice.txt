@@ -1,0 +1,1191 @@
+      EASTWOODS Professional College of Science and Technology                   i
+
+
+       “FISH EYE - A WEB APPLICATION FOR IDENTIFYING FISHES”
+
+
+
+
+                                A Capstone/Thesis/Design Project
+
+                                           Presented to
+
+            EASTWOODS Professional College of Science and Technology
+
+                                        A.Y. 2022 – 2023
+
+
+
+
+                     In Partial Fulfillment of the Requirements for the degree
+
+                                     Bachelor of Science in
+
+                              INFORMATION TECHNOLOGY
+
+
+
+
+                                               By:
+
+
+
+                                     Firmalino, Dan Alvin E.
+
+                                     Gatos, Kyle Edward C.
+
+                                       Santos, Jerry Lee I.
+
+                                      Sapin, Dan Jeremy P.
+
+
+
+                                       Date:November 28, 2022
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology                            ii
+
+
+                                       APPROVAL SHEET
+
+        This Capstone Project entitled “Title Here” proposed and submitted by Member
+Name 1, Member Name 2 and Member Name 3 in partial fulfillment of the requirements
+for the degree Bachelor of Science in Information Technology, has been examined and
+found in order and is hereby recommended for acceptance and approval for ORAL
+EXAMINATION. Capstone Adviser: Mr. Eric C. Almoguerra
+       CAPSTONE PROJECT PROPOSAL COMMITTEE
+
+
+                                       Name of Head Panel
+                                             Chair
+                     Name of Panel 1                    Name of Panel 2
+                        Member                             Member
+
+
+                                 PANEL OF EXAMINERS
+
+        Passed by the PANEL OF EXAMINERS on ORAL EXAMINATION with a grade
+of     on December 18, 2021
+
+                                       Name of Head Panel
+                                             Chair
+                     Name of Panel 1                    Name of Panel 2
+                        Member1                            Member2
+
+                                  Percian Joseph Borja
+                                      Adviser
+
+
+
+        Accepted and approved in partial fulfillment of the requirements for the degree
+Bachelor of Science in Information Technology.
+
+           _________________________                        Mr. Jose Rizal, MIT
+                      Date                                      Proofreader
+
+
+           _________________________                    Mr. Juan Dela Cruz, MIT
+                      Date                                      Position
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology                                    iii
+
+
+                                        ABSTRACT
+
+Fish Eye - A web application for identifying fish allows for the upload or capture of a fish
+
+as well as a description of the fish to quickly and accurately identify the fish. It also has a
+
+tide chart to see the tides in Bataan. The researchers surveyed 101 respondents. To specify
+
+the functionality of the system, the ISO 25010 software quality standards were utilized,
+
+consisting of the following characteristics: Function Suitability, Performance Efficiency,
+
+Compatibility, Usability, Reliability, Security, Maintainability, and Portability. The study
+
+revealed that among the 101 respondents, including 9 I.T experts, most of the respondents
+
+rated the functionality of the overall system as satisfactory in all the criteria included in
+
+ISO 25010, with a general weighted mean of 3.90 The system evaluation based on
+
+Functional Suitability got an average mean of 4.06, which was determined to be
+
+satisfactory.
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology                                  iv
+
+
+                                ACKNOWLEDGEMENT
+
+        The acknowledgement section is a place to recognize and show gratitude to
+
+individuals or organizations that have helped you during the process of your work. This
+
+can include: 1. Advisors, mentors, and other academics who provided guidance and support.
+
+2. Collaborators who helped with research, writing, and other aspects of the project. 3.)
+
+Funding agencies or institutions that provided financial support. 4.) Technical support staff
+
+who assisted with tools and resources. 5.) Family and friends who provided emotional
+
+support. 6.) Any other individuals or groups who made a significant contribution to the
+
+work. 7.) It is important to be specific and sincere in the acknowledgement section, and to
+
+mention the role that each person or organization played in the success of the project.
+
+
+
+
+Project Title Here
+        EASTWOODS Professional College of Science and Technology                                                                                  v
+
+
+                                                  TABLE OF CONTENTS
+
+APPROVAL SHEET .................................................................................................................... II
+
+ABSTRACT ................................................................................................................................. III
+
+ACKNOWLEDGEMENT ...........................................................................................................IV
+
+TABLE OF CONTENTS ............................................................................................................. V
+
+LIST OF FIGURES ................................................................................................................. VIII
+
+LIST OF TABLES .......................................................................................................................IX
+
+CHAPTER I ................................................................................................................................... 1
+
+THE PROBLEM AND ITS BACKGROUND............................................................................. 1
+
+           Introduction ............................................................................................................. 1
+
+           Background of the Study ........................................................................................ 1
+
+           Statement of the Problem ........................................................................................ 1
+
+           Objectives of the Study ........................................................................................... 2
+
+           Significance of the Study ........................................................................................ 2
+
+           Scope and Delimitation ........................................................................................... 3
+
+           Definition of Terms................................................................................................. 3
+
+CHAPTER II .................................................................................................................................. 5
+
+REVIEW OF RELATED LITERATURE ................................................................................... 5
+
+           Inventory System .................................................................................................... 5
+
+           Barcode Technology ..............................................Error! Bookmark not defined.
+
+CHAPTER III ................................................................................................................................ 6
+
+
+
+
+Project Title Here
+        EASTWOODS Professional College of Science and Technology                                                                                vi
+
+
+RESEARCH DESIGN AND METHODOLOGY ....................................................................... 6
+
+           Research Methods ................................................................................................... 6
+
+           Research Locale ...................................................................................................... 6
+
+           Respondents of the Study........................................................................................ 7
+
+           Software Development Methodology ..................................................................... 8
+
+                       Development Process based on the selected SDLC .................................... 9
+
+           Research Instruments .............................................................................................. 9
+
+           System Development Tools .................................................................................... 9
+
+                       Use Case Diagram....................................................................................... 9
+
+                       Use Case Diagram..................................................................................... 10
+
+                       Use Case Diagram..................................................................................... 10
+
+           Technologies to be used ........................................................................................ 10
+
+           Software Evaluation .............................................................................................. 10
+
+CHAPTER IV .............................................................................................................................. 11
+
+PRESENTATION, ANALYSIS, AND INTERPRETATION OF DATA ............................... 11
+
+           Traditional Process................................................................................................ 11
+
+                       Traditional Process 1................................................................................. 11
+
+                       Traditional Process 2................................................................................. 11
+
+           Development of the System .................................................................................. 11
+
+                       Design ....................................................................................................... 11
+
+                       Develop ..................................................................................................... 13
+
+                       Release .......................................................Error! Bookmark not defined.
+
+CHAPTER V ................................................................................................................................ 16
+
+
+
+Project Title Here
+        EASTWOODS Professional College of Science and Technology                                                                                vii
+
+
+SUMMARY, CONCLUSION, AND RECOMMENDATION ................................................. 16
+
+           Summary ............................................................................................................... 16
+
+                       Research Methodology ............................................................................. 16
+
+                       Summary of Selected SDLC ..................................................................... 16
+
+           Conclusion ............................................................................................................ 18
+
+           Recommendation .................................................................................................. 18
+
+BIBLIOGRAPHY ........................................................................................................................ 19
+
+APPENDIX A ............................................................................................................................... 20
+
+INTERVIEW TRANSCRIPT ..................................................................................................... 20
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology                                                         viii
+
+
+                                            LIST OF FIGURES
+
+Figure 1 Agile Methodology Diagram ............................................................................... 8
+
+Figure 2 Admin Panel .......................................................Error! Bookmark not defined.
+
+
+
+
+Project Title Here
+       EASTWOODS Professional College of Science and Technology                                                             ix
+
+
+                                              LIST OF TABLES
+
+Table 1 Profile of the Respondents ................................................................................... 15
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology                                   1
+
+
+                                       CHAPTER I
+
+                     THE PROBLEM AND ITS BACKGROUND
+
+
+Introduction
+
+
+        The problem and its background are briefly introduced in this section. This part
+
+aims to provide context and justification for the research topic. It typically includes an
+
+overview of the issues, concerns, or gaps in knowledge that the research seeks to address.
+
+
+Background of the Study
+
+        The background of the study is a critical component of any research project, and it
+
+should highlight several important elements. Firstly, the background should introduce the
+
+related technology, discussing its background, history, and relevance to the study. Secondly,
+
+the benefactor should be identified and their role in the traditional process explained.
+
+Thirdly, the traditional process should be outlined, discussing its steps and procedures.
+
+Fourthly, the problems encountered in the traditional process should be identified,
+
+highlighting the limitations and challenges faced by the benefactor. Finally, the researcher's
+
+proposed solution should be presented, outlining how it can address the problems
+
+encountered in the traditional process. By highlighting these elements in the background
+
+of the study, the researcher can establish the context and rationale for their research and
+
+demonstrate the importance and relevance of their proposed solution.
+
+
+Statement of the Problem
+
+        The statement of the problem is a concise and clear description of the issue or
+
+research question that the study aims to address. It outlines the specific problem that the
+
+researcher is investigating and provides a clear and focused research objective. It should
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology                                     2
+
+
+be specific, measurable, and includes problems regarding: 1) Features and Functionalities
+
+of the Proposed Solution; 2) Technologies to be used on the development; 3) Evaluation
+
+and Testing Methods.
+
+        1. Statement of the problem 1
+
+        2. Statement of the problem 2
+
+        3. Statement of the problem 3
+
+
+Objectives of the Study
+
+        The objective of the study refers to the specific goals or aims of the research project.
+
+It outlines the intended outcomes of the research and what the researcher hopes to achieve
+
+by conducting the study. The objectives should be clear, specific, and measurable, and
+
+should be closely related to the statement of the problem.
+
+        1. Objective 1
+
+        2. Objective 2
+
+        3. Objective 3
+
+
+Significance of the Study
+
+        The significance of the study refers to the importance or relevance of the research
+
+project. It outlines the potential impact or contribution of the research to the field of study
+
+or to society in general. It should explain why the research is important, what makes it
+
+unique or innovative, and how it can add value to the existing body of knowledge. By
+
+highlighting the significance of the study, the researcher can demonstrate the relevance and
+
+importance of their research and justify why it is worth investigating. See format below.
+
+        Administrator – Why is it significant to the Administrator?
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology                                   3
+
+
+         Future Researchers – Why is it significant to the Future Researchers?
+
+
+Scope and Delimitation
+
+         The scope and delimitation of a study refer to the boundaries or limitations that the
+
+researcher sets for the research project. By defining the scope and delimitation of the study,
+
+the researcher can ensure that the research project is focused and achievable, and that the
+
+results are relevant and useful for the intended audience. It also helps to prevent the
+
+researcher from attempting to address issues that are beyond the scope of the study, or that
+
+cannot be adequately addressed with the available resources and methodology. See format
+
+below.
+
+         The researchers identify the task for every entity stated above.
+
+         Administrator:
+
+            1. Login to the system
+
+            2. Register new Users
+
+            3. Manage Accounts
+
+         Staff:
+
+            1. Login to the System
+
+            2. Add new request
+
+            3. Print Reports
+
+
+Definition of Terms
+
+         The research definition of terms refers to the specific terminology, concepts, and
+
+language used in the research project. It defines the key terms and concepts used in the
+
+study in a clear and concise manner, to ensure that the reader understands the specific
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology                               4
+
+
+meaning and context of the terms as used in the research. Must be alphabetically arranged.
+
+See format below.
+
+Inventory - Video provides a powerful way to help you prove your point.
+
+Video - Video provides a powerful way to help you prove your point.
+
+Inventory - Video provides a powerful way to help you prove your point.
+
+Video - Video provides a powerful way to help you prove your point.
+
+Inventory - Video provides a powerful way to help you prove your point.
+
+Video - Video provides a powerful way to help you prove your point.
+
+Inventory - Video provides a powerful way to help you prove your point.
+
+Video - Video provides a powerful way to help you prove your point.
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology                                 5
+
+
+                                      CHAPTER II
+
+                       REVIEW OF RELATED LITERATURE
+
+        The review of related literature is a critical analysis of the existing body of
+
+knowledge related to the research topic or problem. It involves a comprehensive search
+
+and analysis of relevant studies, articles, books, and other sources of information that are
+
+related to the research problem or question.
+
+
+        To acknowledge and reference the work of other authors in a related study, the
+
+researcher should use the APA Format 7th Edition - Narrative Citation. The keywords to
+
+be used in this chapter must be enumerated. See the format below.
+
+
+Keyword 1
+
+        Related Literature under Keyword 1
+
+
+Keyword 2
+
+        Related Literature under Keyword 2
+
+
+
+
+Project Title Here
+        EASTWOODS Professional College of Science and Technology                                 6
+
+
+                                       CHAPTER III
+
+                     RESEARCH DESIGN AND METHODOLOGY
+
+
+         Research design and methodology refer to the plan or strategy that a researcher uses
+
+to conduct a study. It includes the specific methods and procedures that will be used to
+
+collect, analyze, and interpret data, as well as development of the proposed solution. Add
+
+a paragraph summarizing the whole chapter.
+
+
+Research Methods
+
+
+         To identify the research method to be used, students should consider the research
+
+questions, objectives, and type of data to be collected. Research methods can be broadly
+
+classified as either qualitative, quantitative, or a combination of both. Qualitative research
+
+methods are used to explore and understand the meaning and experiences of individuals or
+
+groups, while quantitative research methods are used to quantify and analyze numerical
+
+data.
+
+
+         It is also important to consider the strengths and limitations of each method and to
+
+choose the method that is best suited to answer the research question and achieve the
+
+research objectives. In some cases, a combination of both qualitative and quantitative
+
+methods may be appropriate to provide a more comprehensive understanding of the
+
+research topic.
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology                                     7
+
+
+Research Locale
+
+
+        Research locale refers to the place or setting where the research is conducted. It can
+
+be a physical location such as a laboratory, a field site, a classroom, a hospital, a community,
+
+or an entire region or country, depending on the scope and nature of the research project.
+
+
+        The research locale is an important consideration in research design because it can
+
+affect the sampling method, the data collection procedures, and the generalizability of the
+
+research findings. The researcher should carefully select the research locale based on its
+
+relevance to the research questions, the availability of research participants, and the
+
+feasibility of conducting the study in that location.
+
+
+Respondents of the Study
+
+        Respondents in a research study are the individuals or groups who participate in the
+
+study and provide data or information that is analyzed to answer the research questions.
+
+Respondents are also commonly referred to as participants, subjects, or informants,
+
+depending on the type of research and the method of data collection. The researchers must
+
+identify the total number of respondents including a minimum of 10 IT Professionals. They
+
+can also use Slovin Formula to determine the appropriate sample size and reduce the
+
+number of respondents needed to represent a target population accurately.
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology                                  8
+
+
+Software Development Methodology
+
+
+        Software development methodology refers to the process or framework used to
+
+design, develop, and deliver a software project for the capstone or final project of a
+
+computer science or software engineering program. It encompasses the overall approach,
+
+tools, techniques, and best practices for managing the software development life cycle,
+
+from requirements analysis and design to coding, testing, deployment, and maintenance.
+
+        There are various software development methodologies that can be used in capstone
+
+projects, such as Agile, Waterfall, Scrum, Spiral, and Rapid Application Development
+
+(RAD), among others. The choice of methodology depends on the project's specific
+
+requirements, timeline, budget, and team members' skills and experience. It is important
+
+for the researchers to choose the appropriate methodology that fits their project needs and
+
+to adhere to the principles and guidelines of the selected methodology throughout the
+
+project's life cycle. Researchers can cite a related study that supports their selected SDLC.
+
+See Format below.
+
+
+
+
+                           Figure 1 Diagram of Selected SDLC
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology                              9
+
+
+Development Process based on the selected SDLC
+
+Phase 1
+
+        Explain the procedure done in Phase 1
+
+Phase 2
+
+        Explain the procedure done in Phase 2
+
+
+Research Instruments
+
+        A research instrument refers to the tool or method used by researchers to collect
+
+data or information for their study. It can take various forms, such as a questionnaire,
+
+survey, interview guide, observation checklist, test, or experiment. See format below.
+
+Research Instrument 1 – Explain the selected Research Instrument
+
+Research Instrument 2 – Explain the selected Research Instrument
+
+Research Instrument 3 – Explain the selected Research Instrument
+
+
+System Development Tools
+
+        System development tools refer to a set of software tools or applications used by
+
+developers to design, build, test, and deploy computer-based systems, such as software
+
+applications, websites, databases, and other digital solutions. These tools can help
+
+streamline the software development process and improve productivity, quality, and
+
+efficiency. It includes diagrams such as ERD, EERD, UML Diagrams, Data Flow
+
+Diagrams, Mockups and etc.
+
+Data Flow Diagram
+
+        Explain the diagram to be used
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology                               10
+
+
+Use Case Diagram
+
+        Explain the diagram to be used
+
+Use Case Diagram
+
+        Explain the diagram to be used
+
+Technologies to be used
+
+   1. Technology 1 - Explain the selected technology.
+
+   2. Technology 2 – Explain the selected technology.
+
+
+Software Evaluation
+
+        Software Evaluation is the process of assessing the quality and effectiveness of a
+
+software product or system. This evaluation is important in ensuring that the software
+
+meets the needs of its intended users and performs as expected. To perform a software
+
+evaluation, researchers must use a standardized set of criteria defined by the ISO 25010
+
+standard.
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology                                   11
+
+
+                                      CHAPTER IV
+
+       PRESENTATION, ANALYSIS, AND INTERPRETATION OF DATA
+
+
+        Presentation, analysis, and interpretation of data involves defining a clear research
+
+question or problem, collecting, and organizing data, analyzing the data using statistical
+
+methods and tools, presenting the findings through clear and concise visual aids, and
+
+interpreting the results in the context of the research question or problem. Deployment and
+
+evaluation may also be included, such as conducting a survey to evaluate the impact of the
+
+research or presentation. Create a paragraph summarizing the content of this chapter.
+
+
+Traditional Process
+
+        Include the traditional process of the selected beneficiary with some figures.
+
+Separate processes to Traditional Process 1 - n
+
+Traditional Process 1
+
+        Traditional process description
+
+Traditional Process 2
+
+        Traditional process description
+
+
+Development of the System
+
+        In this section, the researchers will be demonstrating the activities and actions they
+
+have undertaken to develop their project. It is imperative that they adhere to the chosen
+
+Software Development Life Cycle. Below is an example of format following Agile
+
+Methodology.
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology                               12
+
+
+Requirements
+
+         The Requirement section should include a list of features or user stories that
+
+describe what the software system needs to accomplish. The requirements should be
+
+prioritized based on their importance and value to the stakeholders. Proposal Letters,
+
+Interview Transcripts, Ocular Visits, Case Studies, and anything related on gathering
+
+System Requirements must be included in this section.
+
+Design
+
+         The Design section should include an overview of the system architecture and
+
+design, including any relevant diagrams or models. The design should be based on the
+
+prioritized requirements identified in the Requirement section, and it should be flexible
+
+enough to accommodate changes or adjustments throughout the development process. The
+
+section should also include details about how the design will be reviewed and tested to
+
+ensure it meets the project's goals and requirements. Additionally, it should describe how
+
+the development team will collaborate on the design, such as through pair programming or
+
+code reviews, and how they will track progress and manage any issues or conflicts that
+
+arise. Finally, the section should outline how the design will be implemented using the
+
+chosen Agile methodology, such as through sprints in Scrum, and how it will be continually
+
+evaluated and improved as the project progresses.
+
+Entity Relation Diagram (ERD)
+
+         Diagram Figure and Explanation
+
+Data Flow Diagram
+
+         Diagram Figure and Explanation
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology                                 13
+
+
+Develop
+
+        In this section, the researchers must answer related questions from the Statement of
+
+the Problem that are related to the development of the project. See examples above.
+
+   1. What are the technologies to be used on developing the system?
+
+                 Enumerate the technologies used on developing the project. See example
+
+        format below.
+
+        Technology 1 – Describe how the selected technology is used on development the
+
+        project.
+
+        Technology 2 - Describe how the selected technology is used on development the
+
+        project.
+
+        Technology 3 - Describe how the selected technology is used on development the
+
+        project.
+
+   2. What are the features and functionalities of the System?
+
+                 Enumerate the features and functionalities of the project. Explain the
+
+        features with a screenshot showing the actual feature.
+
+Testing
+
+        The Testing section should include a description of the testing strategy and
+
+approach, which should be closely aligned with the system's requirements and design. This
+
+section should also include an overview of the various types of testing that will be
+
+conducted, such as unit testing, integration testing, and acceptance testing, and how they
+
+will be prioritized and scheduled throughout the project's development cycle. The section
+
+should also outline how testing will be automated, how test results will be tracked and
+
+communicated to the development team, and how defects or issues will be managed and
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology                                 14
+
+
+resolved. Additionally, it should describe how testing will be conducted in an iterative and
+
+collaborative manner, with regular feedback and involvement from stakeholders, and how
+
+the results of testing will inform ongoing development and refinement of the system.
+
+Finally, the section should highlight any tools or technologies that will be used to support
+
+testing, such as continuous integration and delivery platforms, and how they will be
+
+integrated into the overall development process.
+
+Deployment
+
+        Deployment refers to the process of implementing and making the project available
+
+for use by the intended audience or stakeholders. The deployment stage typically comes
+
+after the completion of the project and involves transferring the project from a development
+
+or testing environment to a production environment where it can be accessed and used by
+
+the end-users.
+
+Review
+
+        Review refers to the process of critically examining and evaluating the project to
+
+determine its strengths, weaknesses, and overall quality. Reviews are typically conducted
+
+by a panel of experts or stakeholders who are familiar with the topic and have expertise in
+
+the relevant field. Result on the conducted evaluation will be included in this section.
+
+Profile of the Respondents
+
+        The profile of the respondents in a thesis or capstone project refers to the
+
+characteristics of the individuals or groups who participated in the study or provided data
+
+for the project. The profile of the respondents is an important aspect of the project, as it
+
+provides insights into the demographics and other relevant characteristics of the
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology                                     15
+
+
+participants, which can help to contextualize and interpret the findings of the study.
+
+Researchers can present the data in a tabular and infographic format.
+
+        Explain the contents of Profile of the Respondents before the table caption.
+
+                             Table 1 Profile of the Respondents
+
+
+
+
+Functionality Evaluation
+
+        In this section, the researchers explain their selected evaluation tool for conducting
+
+the Software Evaluation that is specified on the Chapter 3.
+
+Statistical tool used
+
+        In this section, the researchers explain their statistical tool used on conducting their
+
+evaluation.
+
+Figure – Overall System Evaluation (Must follow format on inserting table / figures)
+
+Figure – Evaluation per Criteria (Must follow format on inserting table / figures)
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology                                  16
+
+
+                                        CHAPTER V
+
+                SUMMARY, CONCLUSION, AND RECOMMENDATION
+
+
+           The summary, conclusion, and recommendation sections provide an overview of
+
+the study's objectives, methodology, findings, and insights for future work in the field. The
+
+summary is a brief overview of the study, while the conclusion presents the study's findings
+
+and draws conclusions based on those findings. The recommendation section provides
+
+suggestions for future work or actions based on the study's findings. Together, these
+
+sections serve as critical components of a thesis or capstone project, providing context,
+
+insights, and guidance for future work in the field. Provide a short introduction of this
+
+chapter in this section.
+
+
+Summary
+
+           The summary is a brief and concise overview of the main findings and key points
+
+of the study. It typically includes a brief description of the research problem, objectives,
+
+methodology, and findings. The summary should be written in a clear and concise manner
+
+and provide a quick and easy-to-understand overview of the study. This must be presented
+
+based on the selected and used Software Development Lifecycle.
+
+Research Methodology
+
+           The summary of the research methodology section provides a brief overview of the
+
+research design, data collection methods, data analysis techniques, and any limitations or
+
+constraints of the study. It should summarize the key points of the methodology chapter
+
+and highlight any unique aspects of the study that may impact the interpretation of the
+
+results.
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology                                  17
+
+
+Summary of Selected Software Development Life Cycle
+
+   The summary of selected Software Development Life Cycle (SDLC) refers to a brief
+
+overview of the specific SDLC model that was chosen to develop the software application
+
+for the project. The summary typically includes a description of the selected model's stages,
+
+such as planning, analysis, design, implementation, testing, and maintenance. Phases may
+
+vary on the selected SDLC. Summarized the activities/tasks done in every phase. See
+
+example below using Agile Methodology.
+
+   1. Requirements
+
+                 Summarize the activities/tasks done under the Requirement Phase including
+
+        the outcome.
+
+   2. Design
+
+                 Summarize the activities/tasks done under the Design Phase including the
+
+        outcome.
+
+   3. Development
+
+                 Summarize the activities/tasks done under the Development Phase
+
+        including the outcome.
+
+   4. Testing
+
+                 Summarize the activities/tasks done under the Testing Phase including the
+
+        outcome.
+
+   5. Deployment
+
+                 Summarize the activities/tasks done under the Deployment Phase including
+
+        the outcome.
+
+   6. Review
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology                                  18
+
+
+                 Summarize the activities/tasks done under the Review Phase including the
+
+        outcome.
+
+
+Conclusion
+
+        The conclusion is a critical section that summarizes the main findings of the study
+
+and draws conclusions based on those findings. It should tie together the main points of the
+
+study and highlight any important findings or insights. The conclusion should also be based
+
+on evidence and data gathered from the study and should provide a clear answer to the
+
+research question or problem statement.
+
+
+Recommendation
+
+        The recommendation section is where the author provides suggestions for future
+
+work or actions based on the findings of the study. Think of it like giving advice to someone
+
+who might want to continue research or put the findings into practice. The
+
+recommendations should be practical, specific, and based on the conclusions drawn from
+
+the study. Enumerate the Recommendation below.
+
+        1. Recommendation 1
+
+        2. Recommendation 2
+
+        3. Recommendation 3
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology   19
+
+
+                               BIBLIOGRAPHY
+
+There are no sources in the current document.
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology   20
+
+
+                                APPENDIX A
+
+                         INTERVIEW TRANSCRIPT
+
+                             (Summary Transcript)
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology   21
+
+
+                                 APPENDIX B
+
+                            EVALUATION TOOL
+
+                     (Evaluation Tool for User Acceptability)
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology   22
+
+
+                                APPENDIX C
+
+                            Deployment Certificate
+
+
+
+
+Project Title Here
+      EASTWOODS Professional College of Science and Technology   23
+
+
+                                APPENDIX D
+
+                                Routing Form
+
+
+
+
+Project Title Here
